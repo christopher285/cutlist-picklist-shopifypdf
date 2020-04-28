@@ -8,7 +8,15 @@ Things you may want to cover:
 * Ruby version
 This ruby version is old and may have bugs use the new shopify app if you want to get started
 This shows some calls to the shopify api, and uses prawn to build pdfs.
+
+made a tick list for selection.
+
 It is a picklist app.
+
+Uses Puma and nginx.
+
+secrets is missing under config / secrets.yml.
+
 
 
 
