@@ -1,0 +1,89 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Body html:</strong>
+  <%= @product.body_html %>
+</p>
+
+<p>
+  <strong>Created at:</strong>
+  <%= @product.created_at %>
+</p>
+
+<p>
+  <strong>Handle:</strong>
+  <%= @product.handle %>
+</p>
+
+<p>
+  <strong>Id:</strong>
+  <%= @product.id %>
+</p>
+
+<p>
+  <strong>Images:</strong>
+  <%= @product.images %>
+</p>
+
+<p>
+  <strong>Options:</strong>
+  <%= @product.options %>
+</p>
+
+<p>
+  <strong>Product type:</strong>
+  <%= @product.product_type %>
+</p>
+
+<p>
+  <strong>Published at:</strong>
+  <%= @product.published_at %>
+</p>
+
+<p>
+  <strong>Published scope:</strong>
+  <%= @product.published_scope %>
+</p>
+
+<p>
+  <strong>Tags:</strong>
+  <%= @product.tags %>
+</p>
+
+<p>
+  <strong>Template suffix:</strong>
+  <%= @product.template_suffix %>
+</p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @product.title %>
+</p>
+
+<p>
+  <strong>Metafields global title tag:</strong>
+  <%= @product.metafields_global_title_tag %>
+</p>
+
+<p>
+  <strong>Metafields global description tag:</strong>
+  <%= @product.metafields_global_description_tag %>
+</p>
+
+<p>
+  <strong>Updated at:</strong>
+  <%= @product.updated_at %>
+</p>
+
+<p>
+  <strong>Variants:</strong>
+  <%= @product.variants %>
+</p>
+
+<p>
+  <strong>Vendor:</strong>
+  <%= @product.vendor %>
+</p>
+
+<%= link_to 'Edit', edit_product_path(@product) %> |
+<%= link_to 'Back', products_path %>

@@ -1,0 +1,59 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Products</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Body html</th>
+      <th>Created at</th>
+      <th>Handle</th>
+      <th>Id</th>
+      <th>Images</th>
+      <th>Options</th>
+      <th>Product type</th>
+      <th>Published at</th>
+      <th>Published scope</th>
+      <th>Tags</th>
+      <th>Template suffix</th>
+      <th>Title</th>
+      <th>Metafields global title tag</th>
+      <th>Metafields global description tag</th>
+      <th>Updated at</th>
+      <th>Variants</th>
+      <th>Vendor</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @products.each do |product| %>
+      <tr>
+        <td><%= product.body_html %></td>
+        <td><%= product.created_at %></td>
+        <td><%= product.handle %></td>
+        <td><%= product.id %></td>
+        <td><%= product.images %></td>
+        <td><%= product.options %></td>
+        <td><%= product.product_type %></td>
+        <td><%= product.published_at %></td>
+        <td><%= product.published_scope %></td>
+        <td><%= product.tags %></td>
+        <td><%= product.template_suffix %></td>
+        <td><%= product.title %></td>
+        <td><%= product.metafields_global_title_tag %></td>
+        <td><%= product.metafields_global_description_tag %></td>
+        <td><%= product.updated_at %></td>
+        <td><%= product.variants %></td>
+        <td><%= product.vendor %></td>
+        <td><%= link_to 'Show', product %></td>
+        <td><%= link_to 'Edit', edit_product_path(product) %></td>
+        <td><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Product', new_product_path %>
