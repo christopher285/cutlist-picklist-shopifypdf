@@ -6,6 +6,11 @@ application up and running.
 Things you may want to cover:
 
 * Ruby version
+This ruby version is old and may have bugs use the new shopify app if you want to get started
+This shows some calls to the shopify api, and uses prawn to build pdfs.
+It is a picklist app.
+
+
 
 * System dependencies
 
